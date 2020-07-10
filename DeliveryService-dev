@@ -1,0 +1,15 @@
+spring.datasource.url=jdbc:mysql://mysql-server:3306/deliverydb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.platform=mysql
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+server.port=8082
+
+#Kafka properties
+kafka.boot.server=localhost:9092
+kafka.topic.name=myTopic-kafkasender
+kafka.consumer.group.id=myTopic-group-id
